@@ -1,0 +1,12 @@
+------------------------------------- Lesson 1
+https://youtu.be/BQtFdmcFXBM
+
+mkdir pizzastack
+
+yarn create react-app --template typescript front
+
+=======================================
+00 : 02 : 45
+
+
+
