@@ -5,12 +5,27 @@ mkdir pizzastack
 
 yarn create react-app --template typescript front
 
-
+......................................
 tailwintCss
 
 npm install -D tailwindcss@3
 
 npx tailwindcss init
+......................................
+
+
+yarn add storybook - D
+
+yarn storybook init
+
+npx storybook@6 init
+npx storybook@7.6.11 init
+npx storybook@8.16.12 init
+
+
+
+yarn storybook
+
 
 =======================================
 00 : 02 : 45
