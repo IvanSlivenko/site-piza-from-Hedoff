@@ -26,9 +26,19 @@ npx storybook@8.16.12 init
 
 yarn storybook
 
+craco
+
+yarn add @craco/craco - D
+
+yarn add --dev react-app-alias
 
 =======================================
 00 : 02 : 45
 
+----------------------------------------------- Lesson 2
+https://youtu.be/SCsbX8rTYb4
 
+
+===============================================
+00 : 22 : 06
 

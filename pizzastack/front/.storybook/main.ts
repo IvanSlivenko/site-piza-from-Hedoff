@@ -1,9 +1,11 @@
+import path from 'path';
 import type { StorybookConfig } from '@storybook/react-webpack5';
 
 const config: StorybookConfig = {
   "stories": [
     "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+    "../src/**/*.stories.@(ts|tsx)",
+    "../src/**/*.story.@(ts|tsx)"
   ],
   "addons": [
     "@storybook/addon-essentials",
@@ -16,7 +18,15 @@ const config: StorybookConfig = {
     "options": {}
   },
   "staticDirs": [
-    "..\\public"
-  ]
+    "../public"
+  ],
+  webpackFinal: async (config) => {
+    if (!config.resolve) config.resolve = {};
+    if (!config.resolve.alias) config.resolve.alias = {};
+
+    config.resolve.alias['@app'] = path.resolve(__dirname, '../src/app');
+
+    return config;
+  },
 };
 export default config;
