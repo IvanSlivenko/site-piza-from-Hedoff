@@ -1,4 +1,9 @@
-export const Header = () => {
+type HeaderProps = {
+  title: string;
+};
+
+
+export const Header = ({ title }: HeaderProps) => {
   return (
     <div
       className="
@@ -17,7 +22,7 @@ export const Header = () => {
         text-xl
         font-semibold
         "
-        >🍕 PizzaStack</a>
+        >🍕 {title}</a>
       </div>
     </div>
   );

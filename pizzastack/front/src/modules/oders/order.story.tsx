@@ -27,14 +27,14 @@
 
 ////////////////////////////////////////////////////////////////////////
 import { Meta, StoryFn } from "@storybook/react";
-import { MenuItem } from "./menu-item.component";
+import { Order } from "./order.component";
 
 export default {
-  title: "Menu/Menu Item",
-  component: MenuItem,
-} as Meta<typeof MenuItem>;
+  title: "orders/order",
+  component: Order,
+} as Meta<typeof Order>;
 
-const Template: StoryFn<typeof MenuItem> = (args) => <MenuItem {...args} />;
+const Template: StoryFn<typeof Order> = (args) => <Order {...args} />;
 
 export const View = Template.bind({});
 
@@ -44,4 +44,10 @@ View.args = {
   title: "Піца Барбекю",
   ingridients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
   price: 215,
+
+  user: "User1",
+  date: "01.01.2025",
+  unit: "шт.",
+  quantity: 10,
+  summ: 1000,
 };

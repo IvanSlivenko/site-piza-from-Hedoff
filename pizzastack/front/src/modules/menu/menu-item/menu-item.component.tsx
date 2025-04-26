@@ -1,4 +1,22 @@
-export const MenuItem = () => {
+import { FC } from "react";
+interface MenuItemProps  {
+imagePath: string;
+weight: number;
+title: string;
+ingridients: string;
+price: number
+
+}
+
+const values: MenuItemProps = {
+    imagePath: "/assets/pizza/barbecue.jpeg",
+    weight: 555,
+    title: "Піца Барбекю",
+    ingridients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
+    price: 215,
+}
+
+export const MenuItem: FC<MenuItemProps> = ({ imagePath, weight, title, ingridients, price  }) => {
   return (
     <div
       className="
@@ -7,9 +25,9 @@ export const MenuItem = () => {
         rounded-2xl
         "
     >
-      <div className="relative">
+      <div className="relative bg-white">
         <img
-          src="/assets/pizza/barbecue.jpeg"
+          src={imagePath}
           alt="Barbecue Pizza"
           className="
           w-full 
@@ -19,7 +37,8 @@ export const MenuItem = () => {
           rounded-t-2xl
           "
         />
-        <span className="
+        <span
+          className="
         absolute
         bottom-1.5
         right-3
@@ -29,7 +48,40 @@ export const MenuItem = () => {
         text-white
         text-sm
         "
-        >550 г</span>
+        >
+          {weight} г
+        </span>
+      </div>
+
+      <div
+        className="
+      p-8
+       "
+      >
+        <h2
+          className="
+        text-xl
+        font-semibold
+        mb-2
+        "
+        >
+          {title}
+        </h2>
+        <p
+          className="
+            mb-8
+            "
+        >
+          {  ingridients }
+        </p>
+        <span
+          className="
+                text-xl
+                font-semibold
+                "
+        >
+          { price } грн.
+        </span>
       </div>
     </div>
   );
