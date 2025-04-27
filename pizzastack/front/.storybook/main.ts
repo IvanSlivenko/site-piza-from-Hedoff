@@ -1,5 +1,6 @@
 import path from 'path';
 import type { StorybookConfig } from '@storybook/react-webpack5';
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 const config: StorybookConfig = {
   "stories": [
@@ -21,8 +22,12 @@ const config: StorybookConfig = {
     "../public"
   ],
   webpackFinal: async (config) => {
+    
     if (!config.resolve) config.resolve = {};
+
     if (!config.resolve.alias) config.resolve.alias = {};
+    
+    config.resolve.plugins = [new TsconfigPathsPlugin()];
 
     config.resolve.alias['@app'] = path.resolve(__dirname, '../src/app');
 

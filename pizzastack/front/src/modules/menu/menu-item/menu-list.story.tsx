@@ -27,21 +27,19 @@
 
 ////////////////////////////////////////////////////////////////////////
 import { Meta, StoryFn } from "@storybook/react";
-import { MenuItem } from "./menu-item.component";
+import { MenuList } from "./menu-list.component";
 
 export default {
-  title: "Menu/Menu Item",
-  component: MenuItem,
-} as Meta<typeof MenuItem>;
+  title: "Menu/Menu List",
+  component: MenuList,
+} as Meta<typeof MenuList>;
 
-const Template: StoryFn<typeof MenuItem> = (args) => <MenuItem {...args} />;
+const Template: StoryFn<typeof MenuList> = () => (
+<MenuList />
+);
 
 export const View = Template.bind({});
 
-View.args = {
-  imagePath: "/assets/pizza/barbecue.jpeg",
-  weight: 555,
-  title: "Піца Барбекю",
-  ingredients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
-  price: 215,
-};
+// View.args = {
+
+// };

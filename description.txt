@@ -39,6 +39,8 @@ yarn add --dev react-app-alias
 https://youtu.be/SCsbX8rTYb4
 
 
+yarn add --dev tsconfig-paths-webpack-plugin
+
 ===============================================
-00 : 31 : 03
+00 : 37 : 05
 

@@ -42,7 +42,7 @@ View.args = {
   imagePath: "/assets/pizza/barbecue.jpeg",
   weight: 555,
   title: "Піца Барбекю",
-  ingridients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
+  ingredients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
   price: 215,
 
   user: "User1",

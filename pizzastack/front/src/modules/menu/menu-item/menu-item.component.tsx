@@ -3,20 +3,20 @@ interface MenuItemProps  {
 imagePath: string;
 weight: number;
 title: string;
-ingridients: string;
+ingredients: string;
 price: number
 
 }
 
-const values: MenuItemProps = {
-    imagePath: "/assets/pizza/barbecue.jpeg",
-    weight: 555,
-    title: "Піца Барбекю",
-    ingridients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
-    price: 215,
-}
+// const values: MenuItemProps = {
+//     imagePath: "/assets/pizza/barbecue.jpeg",
+//     weight: 555,
+//     title: "Піца Барбекю",
+//     ingredients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
+//     price: 215,
+// }
 
-export const MenuItem: FC<MenuItemProps> = ({ imagePath, weight, title, ingridients, price  }) => {
+export const MenuItem: FC<MenuItemProps> = ({ imagePath, weight, title, ingredients, price  }) => {
   return (
     <div
       className="
@@ -72,7 +72,7 @@ export const MenuItem: FC<MenuItemProps> = ({ imagePath, weight, title, ingridie
             mb-8
             "
         >
-          {  ingridients }
+          {  ingredients }
         </p>
         <span
           className="
