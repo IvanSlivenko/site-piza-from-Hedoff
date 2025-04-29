@@ -11,8 +11,8 @@ export const FooterName: FC<FooterNameProps & PropsWithChildren> = ({ href, chil
         <li>
       <a
         href={href}
-        className=" text-gray-400
-      text-sm
+        className=" text-white
+      text-xl
       font-bold
       hover:text-gray-300
       hover:underline

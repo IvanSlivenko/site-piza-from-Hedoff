@@ -12,18 +12,23 @@ export const FooterOrder = () => {
     "
     >
       <div>
-        <div className="mb-4">
+        <div className="mb-1">
           <span className="uppercase text-zinc-500 font-bold text-sm">
             Контакти
           </span>
         </div>
-        <div>
+        <div className=" mb-8">
           <ul>
-          <FooterLink href="tel:+380674708721">067 470 87 21</FooterLink>
-          <FooterLink href="mailto:umanProger@ukr.net">umanProger@ukr.net</FooterLink>
-          <FooterName href="mailto:umanProger@ukr.net">UmanProger</FooterName>
+            <FooterLink href="tel:+380674708721">067 470 87 21</FooterLink>
+            <FooterLink href="mailto:umanProger@ukr.net">
+              umanProger@ukr.net
+            </FooterLink>
           </ul>
         </div>
+        <hr className="relative left-[-3rem] w-[calc(100%_+_6rem)] border-zinc-500" />
+        <span className="flex align-middle justify-center mt-8">
+          <FooterName href="mailto:umanProger@ukr.net"> 🌍 UmanProger</FooterName>
+        </span>
       </div>
     </div>
   );
