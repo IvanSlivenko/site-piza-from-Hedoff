@@ -1,4 +1,3 @@
-
 // import { Meta, StoryFn } from "@storybook/react";
 // import { MenuListOrder } from "./order-list.component";
 
@@ -21,6 +20,7 @@
 
 import { Meta, StoryFn } from "@storybook/react";
 import { MenuListOrder } from "./order-list.component";
+import pizzaMenuOrder from "@app/mocs/pizzaOrder.json";
 
 export default {
   title: "orders/Order List",
@@ -28,7 +28,12 @@ export default {
 } as Meta<typeof MenuListOrder>;
 
 // Оскільки MenuListOrder не приймає пропсів — не потрібно {...args}
-const Template: StoryFn<typeof MenuListOrder> = () => <MenuListOrder />;
+const Template: StoryFn<typeof MenuListOrder> = (args) => (
+  <MenuListOrder {...args} />
+);
 
 export const View = Template.bind({});
 
+View.args = {
+  itemsOrder: pizzaMenuOrder,
+};

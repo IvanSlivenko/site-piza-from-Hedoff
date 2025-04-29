@@ -26,7 +26,7 @@ export const Order: FC<OrderProps> = ({
   summ,
 }) => {
   return (
-    <div className="w-96 shadow-xl rounded-2xl bg-white">
+    <div className="w-96 shadow-xl rounded-2xl bg-gray-900/50">
       <div className="relative">
         <img
           src={imagePath}
@@ -39,10 +39,10 @@ export const Order: FC<OrderProps> = ({
       </div>
 
       <div className="p-8">
-        <h2 className="text-xl font-semibold mb-2">{title}</h2>
-        <p className="mb-8">{ingredients}</p>
+        <h2 className="text-xl font-semibold mb-2 text-white">{title}</h2>
+        <p className="mb-8 text-white">{ingredients}</p>
 
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-4 text-white">
           <span className="text-xl font-semibold">{quantity}</span>
           <span className="text-xl font-semibold">{unit}</span>
           <span className="text-xl font-semibold ml-2 mr-2">x {price} грн. =</span>
@@ -50,8 +50,8 @@ export const Order: FC<OrderProps> = ({
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold mb-1">Замовник: {user}</h3>
-          <span className="font-serif">Дата замовлення: {date}</span>
+          <h3 className="text-lg font-semibold mb-1 text-white">Замовник: {user}</h3>
+          <span className="font-serif text-white">Дата замовлення: {date}</span>
         </div>
       </div>
     </div>

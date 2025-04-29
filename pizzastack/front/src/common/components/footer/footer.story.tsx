@@ -1,10 +1,10 @@
 // import type { Meta, StoryObj } from '@storybook/react';
 // import { fn } from '@storybook/test';
-// import { MenuItem } from './menu-item.component';
+// import { Header } from './header.component';
 
 // const meta = {
-//   title: 'Menu/Menu Item',
-//   component: MenuItem,
+//   title: 'Common/Header',
+//   component: Header,
 //   // parameters: {
 //   //   layout: 'centered',
 //   // },
@@ -13,7 +13,7 @@
 //   //   backgroundColor: { control: 'color' },
 //   // },
 //   // args: { onClick: fn() },
-// } satisfies Meta<typeof MenuItem>;
+// } satisfies Meta<typeof Header>;
 
 // export default meta;
 // type Story = StoryObj<typeof meta>;
@@ -25,21 +25,19 @@
 //   },
 // };
 
-////////////////////////////////////////////////////////////////////////
-import { Meta, StoryFn } from "@storybook/react";
-import { MenuList } from "./menu-list.component";
+////////////////////////////////////////////////////////////
+import { Meta, StoryFn  } from '@storybook/react';
+import { Footer } from './footer.component';
 
 export default {
-  title: "Menu/Menu List",
-  component: MenuList,
-} as Meta<typeof MenuList>;
+  title: 'Common/Footer',
+  component: Footer,
+} as Meta<typeof Footer>;
 
-const Template: StoryFn<typeof MenuList> = () => (
-<MenuList />
-);
+const Template: StoryFn<typeof Footer> = () => <Footer />
 
 export const View = Template.bind({});
 
 // View.args = {
-
+//   title: 'PizzaStack',
 // };

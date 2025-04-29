@@ -1,10 +1,19 @@
-import pizzaMenuOrder from "@app/mocs/pizzaOrder.json";
 import { Order } from "./order.component";
+import { PizzaOrder } from "@app/modules/oders/types/pizzaOrder"
+import { FC } from "react";
 
-export const MenuListOrder = () => {
-  return <div>
-     {pizzaMenuOrder.map(({ image, ingredients, ...rest }) => (
-  <Order key={rest.id} {...rest} imagePath={image} ingredients={ingredients} />
+interface OrderListProps {
+  itemsOrder: PizzaOrder[];
+}
+
+export const MenuListOrder:FC< OrderListProps > = ({itemsOrder}) => {
+  return <div className="flex flex-wrap gap-10">
+     {itemsOrder.map(({ image, ingredients, ...rest }) => (
+  <Order
+  {...rest}
+    imagePath={'/assets/pizza/'+image} 
+    ingredients={ingredients} 
+    key={`pizza-${rest.id}`}/>
 ))}
 
     </div>;

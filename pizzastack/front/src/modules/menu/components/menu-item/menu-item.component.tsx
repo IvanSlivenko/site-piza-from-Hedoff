@@ -8,14 +8,6 @@ price: number
 
 }
 
-// const values: MenuItemProps = {
-//     imagePath: "/assets/pizza/barbecue.jpeg",
-//     weight: 555,
-//     title: "Піца Барбекю",
-//     ingredients: "(подвійна порція грибів), Гриби, Моцарела, Соус, Альфредо",
-//     price: 215,
-// }
-
 export const MenuItem: FC<MenuItemProps> = ({ imagePath, weight, title, ingredients, price  }) => {
   return (
     <div
