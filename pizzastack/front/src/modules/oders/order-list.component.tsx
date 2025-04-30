@@ -7,7 +7,7 @@ interface OrderListProps {
 }
 
 export const MenuListOrder:FC< OrderListProps > = ({itemsOrder}) => {
-  return <div className="flex flex-wrap gap-10">
+  return <div className="flex flex-wrap gap-10 justify-center">
      {itemsOrder.map(({ image, ingredients, ...rest }) => (
   <Order
   {...rest}

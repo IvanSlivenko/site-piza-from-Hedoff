@@ -5,9 +5,7 @@ export const Footer = () => {
     <div
       className="
     bg-gray-900
-    pt-12
-    px-12
-    pb-8
+    p-12
     "
     >
       <div>

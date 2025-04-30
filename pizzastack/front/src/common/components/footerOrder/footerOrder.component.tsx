@@ -6,9 +6,7 @@ export const FooterOrder = () => {
     <div
       className="
     bg-gray-900
-    pt-12
-    px-12
-    pb-8
+    p-8
     "
     >
       <div>

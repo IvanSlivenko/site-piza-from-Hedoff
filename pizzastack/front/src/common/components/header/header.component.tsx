@@ -10,6 +10,7 @@ export const Header = ({ title }: HeaderProps) => {
     h-12 
     shadow-xl
     px-6
+    mb-12
 
     "
     >
