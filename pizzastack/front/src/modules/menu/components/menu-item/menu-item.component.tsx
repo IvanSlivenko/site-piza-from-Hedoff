@@ -20,7 +20,7 @@ export const MenuItem: FC<MenuItemProps> = ({ imagePath, weight, title, ingredie
       <div className="relative bg-white">
         <img
           src={imagePath}
-          alt="Barbecue Pizza"
+          alt={title}
           className="
           w-full 
           h-[15rem] 

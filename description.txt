@@ -52,3 +52,46 @@ https://youtu.be/dEtcf3E8sMU
 
 =================================================
 00 : 30 : 47
+
+-------------------------------------------------- Lesson 4
+
+https://youtu.be/StFIFNHV7lM
+
+deploy to  hosting
+
+==================================================
+00 : 00 : 00
+
+
+--------------------------------------------------------- Lesson 1 Docker
+https://youtu.be/lr1rYnUubpQ
+
+docker image - інструкція
+docker container - образ розгорнутий за інструкцією (програмне середовище)
+docker hub - Хмарне середовище для зберігання docker image
+
+install  docker  descktop - 23 : 56
+https://learn.microsoft.com/ru-ru/windows/wsl/install
+Ubuntu-24.04
+
+start docker
+welcome to docker
+host-port 8088
+
+localhost:8088
+
+=========================================================
+00 : 31 : 08
+
+
+
+
+-------------------------------------------------- Lesson 5
+https://youtu.be/aDCv5Qky5Dc
+
+
+
+
+==================================================
+00 : 00 : 00
+
