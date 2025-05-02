@@ -1,0 +1,8 @@
+# .dockerignore
+node_modules
+.git
+*.log
+*.cache
+storybook-static
+coverage
+*.DS_Store
