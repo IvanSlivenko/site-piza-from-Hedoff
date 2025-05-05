@@ -63,118 +63,61 @@ deploy to  hosting
 00 : 00 : 00
 
 
---------------------------------------------------------- Lesson 1 Docker
-https://youtu.be/lr1rYnUubpQ
-
-docker image - інструкція
-docker container - образ розгорнутий за інструкцією (програмне середовище)
-docker hub - Хмарне середовище для зберігання docker image
-
-install  docker  descktop - 23 : 56
-https://learn.microsoft.com/ru-ru/windows/wsl/install
-Ubuntu-24.04
-
-start docker
-welcome to docker
-host-port 8088
-
-localhost:8088
-
-=========================================================
-00 : 38 : 56
-
-
----------------------------------------------------- Lesson 2 Docker ( Bogdan Staschuk)
-https://youtu.be/_uZQtRyF6Eg
-
-
-====================================================
-00 : 00 : 00
-
-
------------------------------------------------------ Lesson 3 Docker ( Нотатки Хедофа )
-https://youtu.be/NXoPKCLYjJY
-
-docker image - образ
-docker container - запущений додаток
-docker file - інструкція для запуску контейнера
-етапи docker file
-dockerHub - аналог npm
-docker compose file - аналог package.json
-
-
-///////////////////////////////////////////////////////// Practick
-nginx.conf
-Dockerfile
-.dockerignore
-
-terminal: 
-
-docker build . --tag headofnotes_react:0.1.0
-
-docker builder prune -a
-docker system prune -a --volumes
-
-
-......................................... Завершення роботи Docker
-wsl --unregister docker-desktop
-wsl --unregister docker-desktop-data
-
-......................................... Очистка wsl cach
-cd /home/anya/your-project
-rm -rf node_modules
-yarn cache clean
-
-................................................ Знаходимо wsl
-wsl -l -v
-
-................................................ заходимо в wsl
-wsl
-
-............................................... читаємо навантаження на систему
-df -h
-
--------------------------------------------------- запуск контейнера Docker
-docker run -p 80:80 headofnotes_react:0.1.0
-
-docker images ..... перегляд існуючих docker images
-docker ps .........  перегляд запущених docker контенерів
-
-
-docker run -d -p 80:80 headofnotes_react:0.1.0 ..... запуск docker image
-
-docker stop  dfa4febfe4ca ................. stop
-
-docker start dfa4febfe4ca ................. start
-
-docker login .................. login
-
-docker tag headofnotes_react:0.1.0 ivanslivenko/headofnotes_react:0.1.0   ................. зміна назви image
-
-docker push ivanslivenko/headofnotes_react:0.1.0   ............................. розміщення image на docker hub 
-
-
-
-
-
-////////////////////////////////////////////////////////
-=====================================================
-00 : 25 : 31
-
-.........................................................Lesson Docker from RomNero
-https://youtu.be/O8N1lvkIjig
-.........................................................
-
-00 : 00 : 00
-
 
 
 -------------------------------------------------- Lesson 5
 https://youtu.be/aDCv5Qky5Dc
 
+hasura
+
+https://hasura.io/docs/2.0/getting-started/docker-simple/
+
+
+Інсталюємо hasura
+curl https://raw.githubusercontent.com/hasura/graphql-engine/stable/install-manifests/docker-compose/docker-compose.yaml -o docker-compose.yml
+
+docker compose up -d
+
+................................................. stop docker
+docker compose stop
+
+................................................ start docker 
+docker compose start
+
+Vanya@DESKTOP-96JTJ1S MINGW64 /d/GitHub/site-piza-from-Hedoff/pizzastack/hasura (main)
+$  yarn init -yyarn 
+
+
+
+hasura-cli
+...........................................
+створюэмо папку 
+C:\hasura-cli
+
+додаємо змінну оточення
+C:\hasura-cli
+
+качаємо 
+cli-hasura-darwin-amd64 
+
+https://github.com/hasura/graphql-engine/releases
+
+в  C:\hasura-cli
+
+переіменовуємо в hasura
+
+перевіряємо версію 
+hasura version
+...................................................................
+
+hasura init pizzastack --endpoint http://localhost:8080
+
+............................................................................ Запуск консолі hasura cli
+hasura console
+
 
 
 
 ==================================================
-00 : 00 : 00
+00 : 15 : 41
 
