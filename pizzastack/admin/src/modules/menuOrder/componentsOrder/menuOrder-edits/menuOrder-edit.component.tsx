@@ -4,7 +4,9 @@ export const MenuOrderEdit = () => (
   <Edit>
     <SimpleForm>
       {/* <TextInput source="id" disabled /> */}
-      <TextInput source="name" label="Назва товару" />
+      <TextInput source="title" label="Назва товару" />
+      <TextInput source="ingredients" label="Інгрідієнти" />
+      <TextInput source="user" label="Користувач" />
       <NumberInput source="price" label="Ціна" />
     </SimpleForm>
   </Edit>

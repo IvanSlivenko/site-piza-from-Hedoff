@@ -8,7 +8,7 @@ export const MenuEdit = () => (
       <TextInput source="image" fullWidth/>
       <TextInput source="ingredients" fullWidth/>
       <NumberInput source="price" label="Ціна" />
-      <NumberInput source="weight" label="Ціна" />
+      <NumberInput source="weight" label="Вага" />
     </SimpleForm>
   </Edit>
 );
