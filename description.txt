@@ -147,4 +147,78 @@ yarn add @mui/material @emotion/react @emotion/styled
 yarn add graphql ra-data-hasura
 
 ===================================================== 
-00 : 23 : 38
+00 : 26 : 09
+
+
+
+----------------------------------------------------------- Lessons 7  ( administrators )
+https://youtu.be/AkSN0UHD-vo
+
+
+netlify
+
+login: ivan8822@ukr.net
+
+password: iv07092006sl
+
+https://docs.netlify.com/functions/get-started/?fn-language=ts
+
+cd serverless
+yarn init -y
+
+create file .gitignore
+
+yarn add @netlify/functions -D
+
+npm install -g netlify-cli
+
+
+https://docs.netlify.com/functions/get-started/?fn-language=ts#test-locally
+netlify dev
+
+.................................................... тут читаємо нашу функцію
+http://localhost:8888/.netlify/functions/register
+
+
+hasura console (9695) 
+actions
+
+button - create
+
+mutations
+
+password: pizzastack
+username: pizzastack
+
+
+yarn add jsonwebtoken
+
+jwt
+https://hasura.io/docs/2.0/auth/authentication/jwt/
+
+
+jwt.io
+
+
+
+graphql
+.......................................................................... graphql
+yarn add graphql
+yarn add typescript @graphql-codegen/cli -D
+
+yarn graphql-code-generator init
+
+yarn add @graphql-codegen/typescript @graphql-codegen/typescript-graphql-request -D
+yarn add typescript -D
+yarn add @graphql-codegen/typescript-operations -D
+
+................................................................................... Запускаємо codegen
+yarn codegen
+
+
+
+
+
+
+===========================================================
+00 : 24 : 27
