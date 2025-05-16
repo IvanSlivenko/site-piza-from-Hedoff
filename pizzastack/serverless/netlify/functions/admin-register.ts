@@ -11,7 +11,22 @@ const handler: Handler = async (event, context) => {
   }
 
   try {
-    const { body } = event;
+    const { body, headers } = event;
+    console.log('headers', headers);
+    
+    if (
+      !headers["x-pizzastack-secret-key"] ||
+      headers["x-pizzastack-secret-key"] !== "mypizzastacksecretkey"
+    ) {
+      return {
+        statusCode: 403,
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: "x-pizzastack-secret-key is missing or invalid",
+        }),
+      };
+    }
+
     const input: AdminregisterInput = JSON.parse(body!).input.admin;
 
     const sdk = getSdk(new GraphQLClient("http://localhost:8080/v1/graphql"));
@@ -26,11 +41,7 @@ const handler: Handler = async (event, context) => {
       password: passwordHash,
     });
 
-    console.log('data', data);
-    
-
-   
-   
+    console.log("data", data);
 
     const accessToken = jwt.sign(
       {
