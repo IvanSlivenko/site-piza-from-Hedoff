@@ -1,5 +1,7 @@
+import { GraphQLClient } from 'graphql-request';
 import { Handler } from "@netlify/functions";
 import jwt from "jsonwebtoken";
+import { getSdk } from '../common/sdk';
 
 const handler: Handler = async (event, context) => {
   interface AdminregisterInput {
@@ -10,6 +12,14 @@ const handler: Handler = async (event, context) => {
   const { body } = event;
 
   const input: AdminregisterInput = JSON.parse(body!).input.admin;
+  const sdk = getSdk(new GraphQLClient('http://localhost:8080/v1/graphql'));
+  console.log('sdk',sdk.InsertAdmin(input));
+  
+  
+  const data = await sdk.InsertAdmin(input);
+  // const data = sdk.InsertAdmin(input);
+  // console.log('data', data);
+  
 
   const accessToken = jwt.sign(
     {

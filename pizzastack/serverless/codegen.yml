@@ -1,6 +1,6 @@
 overwrite: true
 schema: "http://localhost:8080/v1/graphql"
-documents: null
+documents: graphql/*.gql
 generates:
   netlify/common/sdk.ts:
     plugins:

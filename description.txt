@@ -215,10 +215,36 @@ yarn add @graphql-codegen/typescript-operations -D
 ................................................................................... Запускаємо codegen
 yarn codegen
 
+yarn add graphql-request
 
 
+========================================================== start work
+
+URL 1
+http://192.168.0.104:8888/.netlify/functions/register
+
+URL 2
+http://10.1.0.158:8888/.netlify/functions/register
+
+netlify dev
+hasura console
+yarn codegen
+
+
+yarn add crypto
 
 
 
 ===========================================================
-00 : 24 : 27
+00 : 29 : 08
+
+
+----------------------------------------------------------- Lessons 8  ( administrators part 2)
+https://youtu.be/YE7tYAoYouc
+
+
+
+
+
+==========================================================
+00 : 06 : 29

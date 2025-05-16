@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
+    "crypto": "^1.0.1",
     "graphql": "^16.11.0",
+    "graphql-request": "^7.1.2",
     "jsonwebtoken": "^9.0.2",
     "serverless": "file:"
   },
